@@ -12,11 +12,11 @@ resource "aws_instance" "this" {
   user_data = <<-EOF
               #!/bin/bash
               # ------------------------
-              # Install specific Docker 26.1.4
+              # Install specific Docker 22.1.4
               # ------------------------
               sudo yum update -y
               sudo amazon-linux-extras enable docker
-              sudo yum install -y docker-26.1.4
+              sudo yum install -y docker-22.1*
               sudo systemctl enable docker
               sudo systemctl start docker
 

@@ -9,7 +9,7 @@ variable "key_name" {
 
 variable "ami_id" {
   type    = string
-  default = "ami-0c02fb55956c7d316"
+  default = "ami-0c55b159cbfafe1f0"  # Ubuntu 22.04 LTS in us-east-1
 }
 
 variable "allowed_ip" {
